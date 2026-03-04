@@ -4,7 +4,9 @@ import com.smartcampus.campusissue.model.Issue;
 import com.smartcampus.campusissue.repository.IssueRepository;
 import com.smartcampus.campusissue.service.MLService;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -64,5 +66,53 @@ public class IssueController {
         }
 
         return null;
+    }
+    
+    @GetMapping("/stats")
+    public Map<String, Object> getStats() {
+
+        List<Issue> issues = issueRepository.findAll();
+
+        int total = issues.size();
+        int pending = 0;
+        int resolved = 0;
+        int highPriority = 0;
+
+        Map<String,Integer> categoryCount = new HashMap<>();
+
+        for(Issue issue : issues){
+
+            if(issue.getStatus().equalsIgnoreCase("Pending"))
+                pending++;
+
+            if(issue.getStatus().equalsIgnoreCase("Resolved"))
+                resolved++;
+
+            if(issue.getPriority().equalsIgnoreCase("High"))
+                highPriority++;
+
+            String cat = issue.getCategory();
+            categoryCount.put(cat, categoryCount.getOrDefault(cat,0)+1);
+        }
+
+        String mostCommonCategory = "";
+        int max = 0;
+
+        for(String key : categoryCount.keySet()){
+            if(categoryCount.get(key) > max){
+                max = categoryCount.get(key);
+                mostCommonCategory = key;
+            }
+        }
+
+        Map<String,Object> stats = new HashMap<>();
+
+        stats.put("totalIssues", total);
+        stats.put("pendingIssues", pending);
+        stats.put("resolvedIssues", resolved);
+        stats.put("highPriorityIssues", highPriority);
+        stats.put("mostCommonCategory", mostCommonCategory);
+
+        return stats;
     }
 }
