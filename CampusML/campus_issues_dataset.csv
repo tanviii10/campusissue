@@ -1,0 +1,251 @@
+description,category,location,severity,priority,resolutionTimeHours
+Projector not working in Lab,Infrastructure,Campus Area,High,High,5
+Fan not working in Campus Area,Infrastructure,Lab,Low,Low,30
+Damaged window glass in Campus Area,Infrastructure,Other,High,High,9
+Ceiling leakage in Classroom,Infrastructure,Campus Area,Medium,Medium,9
+Broken desk in Other,Infrastructure,Classroom,Medium,Medium,23
+Ceiling leakage in Washrooms,Infrastructure,Lab,Low,Low,44
+Projector not working in Other,Infrastructure,Lab,Medium,Medium,13
+Fan not working in Lab,Infrastructure,Washrooms,Low,Low,26
+Projector not working in Other,Infrastructure,Lab,Medium,Medium,9
+Fan not working in Other,Infrastructure,Campus Area,Medium,Medium,12
+Ceiling leakage in Other,Infrastructure,Washrooms,Low,Low,24
+Projector not working in Other,Infrastructure,Other,High,High,2
+Broken desk in Other,Infrastructure,Other,High,High,5
+Damaged window glass in Campus Area,Infrastructure,Campus Area,Medium,Medium,17
+Ceiling leakage in Lab,Infrastructure,Lab,High,High,3
+Broken desk in Washrooms,Infrastructure,Classroom,Medium,Medium,19
+Projector not working in Washrooms,Infrastructure,Campus Area,High,High,2
+Fan not working in Lab,Infrastructure,Other,Medium,Medium,17
+Fan not working in Lab,Infrastructure,Other,High,High,11
+Ceiling leakage in Lab,Infrastructure,Other,Low,Low,28
+Broken desk in Campus Area,Infrastructure,Campus Area,High,High,9
+Fan not working in Lab,Infrastructure,Classroom,Medium,Medium,13
+Fan not working in Other,Infrastructure,Classroom,Medium,Medium,13
+Ceiling leakage in Washrooms,Infrastructure,Washrooms,High,High,9
+Broken desk in Lab,Infrastructure,Washrooms,High,High,7
+Broken desk in Campus Area,Infrastructure,Other,Medium,Medium,20
+Broken desk in Lab,Infrastructure,Lab,High,High,9
+Projector not working in Washrooms,Infrastructure,Classroom,Low,Low,46
+Projector not working in Washrooms,Infrastructure,Campus Area,Medium,Medium,10
+Ceiling leakage in Other,Infrastructure,Other,Medium,Medium,11
+Projector not working in Lab,Infrastructure,Lab,High,High,9
+Damaged window glass in Classroom,Infrastructure,Classroom,Low,Low,44
+Fan not working in Lab,Infrastructure,Classroom,Low,Low,39
+Broken desk in Washrooms,Infrastructure,Other,Medium,Medium,13
+Damaged window glass in Campus Area,Infrastructure,Other,Medium,Medium,13
+Fan not working in Other,Infrastructure,Other,Low,Low,46
+Projector not working in Lab,Infrastructure,Washrooms,High,High,5
+Broken desk in Washrooms,Infrastructure,Other,Low,Low,40
+Ceiling leakage in Campus Area,Infrastructure,Lab,Low,Low,34
+Projector not working in Other,Infrastructure,Lab,Low,Low,32
+Broken desk in Other,Infrastructure,Classroom,High,High,4
+Damaged window glass in Lab,Infrastructure,Campus Area,Low,Low,27
+Broken desk in Other,Infrastructure,Washrooms,Medium,Medium,18
+Ceiling leakage in Classroom,Infrastructure,Lab,Medium,Medium,22
+Ceiling leakage in Washrooms,Infrastructure,Other,Medium,Medium,13
+Fan not working in Classroom,Infrastructure,Washrooms,Medium,Medium,23
+Damaged window glass in Lab,Infrastructure,Classroom,High,High,11
+Fan not working in Washrooms,Infrastructure,Other,Low,Low,26
+Projector not working in Lab,Infrastructure,Classroom,Medium,Medium,8
+Ceiling leakage in Washrooms,Infrastructure,Lab,High,High,5
+Water spilled in Classroom,Cleanliness & Hygiene,Other,Low,Low,41
+Dusty classroom floor in Lab,Cleanliness & Hygiene,Washrooms,Low,Low,41
+Washroom not cleaned in Other,Cleanliness & Hygiene,Classroom,High,High,12
+Garbage accumulated in Campus Area,Cleanliness & Hygiene,Classroom,Medium,Medium,14
+Water spilled in Other,Cleanliness & Hygiene,Other,Low,Low,47
+Washroom not cleaned in Lab,Cleanliness & Hygiene,Lab,High,High,3
+Dusty classroom floor in Classroom,Cleanliness & Hygiene,Lab,Medium,Medium,22
+Garbage accumulated in Washrooms,Cleanliness & Hygiene,Classroom,Medium,Medium,17
+Washroom not cleaned in Washrooms,Cleanliness & Hygiene,Campus Area,Medium,Medium,19
+Water spilled in Classroom,Cleanliness & Hygiene,Classroom,Low,Low,34
+Garbage accumulated in Other,Cleanliness & Hygiene,Campus Area,Medium,Medium,17
+Washroom not cleaned in Other,Cleanliness & Hygiene,Washrooms,Medium,Medium,23
+Dusty classroom floor in Lab,Cleanliness & Hygiene,Classroom,Medium,Medium,24
+Garbage accumulated in Classroom,Cleanliness & Hygiene,Campus Area,Low,Low,34
+Dusty classroom floor in Other,Cleanliness & Hygiene,Classroom,Medium,Medium,8
+Washroom not cleaned in Classroom,Cleanliness & Hygiene,Other,Medium,Medium,20
+Water spilled in Classroom,Cleanliness & Hygiene,Classroom,Low,Low,41
+Garbage accumulated in Lab,Cleanliness & Hygiene,Lab,High,High,4
+Washroom not cleaned in Lab,Cleanliness & Hygiene,Classroom,High,High,9
+Garbage accumulated in Other,Cleanliness & Hygiene,Campus Area,Medium,Medium,24
+Washroom not cleaned in Campus Area,Cleanliness & Hygiene,Lab,Low,Low,25
+Dusty classroom floor in Washrooms,Cleanliness & Hygiene,Other,Medium,Medium,9
+Washroom not cleaned in Washrooms,Cleanliness & Hygiene,Classroom,Low,Low,30
+Washroom not cleaned in Classroom,Cleanliness & Hygiene,Other,High,High,12
+Garbage accumulated in Campus Area,Cleanliness & Hygiene,Other,Medium,Medium,21
+Dusty classroom floor in Campus Area,Cleanliness & Hygiene,Lab,Medium,Medium,24
+Washroom not cleaned in Campus Area,Cleanliness & Hygiene,Classroom,High,High,10
+Washroom not cleaned in Washrooms,Cleanliness & Hygiene,Campus Area,High,High,7
+Water spilled in Lab,Cleanliness & Hygiene,Classroom,Low,Low,41
+Garbage accumulated in Classroom,Cleanliness & Hygiene,Lab,Medium,Medium,15
+Water spilled in Other,Cleanliness & Hygiene,Campus Area,Medium,Medium,19
+Water spilled in Other,Cleanliness & Hygiene,Washrooms,High,High,9
+Dusty classroom floor in Other,Cleanliness & Hygiene,Campus Area,High,High,3
+Garbage accumulated in Campus Area,Cleanliness & Hygiene,Classroom,Medium,Medium,15
+Water spilled in Lab,Cleanliness & Hygiene,Other,Low,Low,39
+Washroom not cleaned in Washrooms,Cleanliness & Hygiene,Other,Medium,Medium,14
+Garbage accumulated in Other,Cleanliness & Hygiene,Campus Area,Medium,Medium,8
+Water spilled in Classroom,Cleanliness & Hygiene,Washrooms,High,High,10
+Water spilled in Classroom,Cleanliness & Hygiene,Classroom,Medium,Medium,8
+Washroom not cleaned in Campus Area,Cleanliness & Hygiene,Campus Area,Medium,Medium,11
+Water spilled in Campus Area,Cleanliness & Hygiene,Lab,Medium,Medium,19
+Washroom not cleaned in Classroom,Cleanliness & Hygiene,Campus Area,High,High,10
+Dusty classroom floor in Washrooms,Cleanliness & Hygiene,Washrooms,Medium,Medium,12
+Dusty classroom floor in Campus Area,Cleanliness & Hygiene,Classroom,High,High,7
+Washroom not cleaned in Other,Cleanliness & Hygiene,Campus Area,Medium,Medium,18
+Washroom not cleaned in Other,Cleanliness & Hygiene,Washrooms,High,High,5
+Water spilled in Lab,Cleanliness & Hygiene,Washrooms,Low,Low,28
+Water spilled in Washrooms,Cleanliness & Hygiene,Washrooms,Low,Low,34
+Water spilled in Lab,Cleanliness & Hygiene,Campus Area,High,High,7
+Water spilled in Lab,Cleanliness & Hygiene,Other,Medium,Medium,18
+Printer not working in Washrooms,Technical Issue,Washrooms,Medium,Medium,16
+Smart board not responding in Washrooms,Technical Issue,Classroom,High,High,2
+Smart board not responding in Classroom,Technical Issue,Other,Medium,Medium,24
+Smart board not responding in Washrooms,Technical Issue,Washrooms,Medium,Medium,8
+WiFi not working in Lab,Technical Issue,Other,Medium,Medium,13
+Printer not working in Other,Technical Issue,Campus Area,Medium,Medium,12
+Printer not working in Classroom,Technical Issue,Campus Area,Medium,Medium,10
+Smart board not responding in Washrooms,Technical Issue,Campus Area,High,High,10
+Smart board not responding in Classroom,Technical Issue,Lab,High,High,3
+WiFi not working in Washrooms,Technical Issue,Lab,Low,Low,29
+Computer system crash in Lab,Technical Issue,Lab,Medium,Medium,22
+Server down in Washrooms,Technical Issue,Campus Area,Medium,Medium,23
+Smart board not responding in Classroom,Technical Issue,Classroom,Medium,Medium,11
+Smart board not responding in Classroom,Technical Issue,Campus Area,High,High,7
+Computer system crash in Other,Technical Issue,Campus Area,High,High,7
+Server down in Lab,Technical Issue,Classroom,High,High,4
+Printer not working in Campus Area,Technical Issue,Washrooms,Medium,Medium,19
+Server down in Lab,Technical Issue,Lab,Medium,Medium,13
+Smart board not responding in Other,Technical Issue,Other,Low,Low,42
+Printer not working in Other,Technical Issue,Other,Medium,Medium,20
+WiFi not working in Washrooms,Technical Issue,Lab,High,High,7
+Smart board not responding in Other,Technical Issue,Other,High,High,12
+Computer system crash in Lab,Technical Issue,Other,Low,Low,45
+Smart board not responding in Campus Area,Technical Issue,Campus Area,Medium,Medium,24
+Computer system crash in Other,Technical Issue,Washrooms,Medium,Medium,8
+Server down in Classroom,Technical Issue,Campus Area,Medium,Medium,20
+Printer not working in Campus Area,Technical Issue,Other,Low,Low,47
+WiFi not working in Other,Technical Issue,Lab,High,High,9
+Server down in Classroom,Technical Issue,Washrooms,Medium,Medium,16
+Server down in Campus Area,Technical Issue,Campus Area,Low,Low,44
+WiFi not working in Lab,Technical Issue,Washrooms,Medium,Medium,10
+Computer system crash in Campus Area,Technical Issue,Washrooms,Low,Low,28
+Smart board not responding in Classroom,Technical Issue,Classroom,Low,Low,40
+Computer system crash in Classroom,Technical Issue,Classroom,Low,Low,35
+Printer not working in Washrooms,Technical Issue,Other,Medium,Medium,12
+Printer not working in Other,Technical Issue,Washrooms,High,High,6
+Server down in Washrooms,Technical Issue,Lab,Low,Low,46
+Server down in Classroom,Technical Issue,Lab,High,High,6
+Smart board not responding in Washrooms,Technical Issue,Lab,Low,Low,40
+WiFi not working in Classroom,Technical Issue,Other,Low,Low,32
+Printer not working in Washrooms,Technical Issue,Other,Low,Low,38
+Computer system crash in Washrooms,Technical Issue,Other,High,High,4
+Printer not working in Washrooms,Technical Issue,Classroom,High,High,8
+WiFi not working in Other,Technical Issue,Lab,Medium,Medium,11
+WiFi not working in Washrooms,Technical Issue,Classroom,Medium,Medium,16
+WiFi not working in Washrooms,Technical Issue,Classroom,Low,Low,47
+WiFi not working in Campus Area,Technical Issue,Other,Medium,Medium,8
+Smart board not responding in Campus Area,Technical Issue,Washrooms,Low,Low,37
+Smart board not responding in Campus Area,Technical Issue,Washrooms,Medium,Medium,10
+Smart board not responding in Washrooms,Technical Issue,Lab,Medium,Medium,24
+Water leakage near electric panel in Campus Area,Safety,Washrooms,High,High,12
+Broken staircase railing in Classroom,Safety,Washrooms,High,High,8
+Smoke from switch board in Other,Safety,Lab,High,High,2
+Electrical spark observed in Washrooms,Safety,Classroom,High,High,4
+Electrical spark observed in Classroom,Safety,Washrooms,High,High,6
+Smoke from switch board in Other,Safety,Lab,High,High,7
+Water leakage near electric panel in Other,Safety,Other,High,High,3
+Electrical spark observed in Campus Area,Safety,Washrooms,High,High,3
+Fire alarm malfunction in Classroom,Safety,Washrooms,High,High,6
+Electrical spark observed in Campus Area,Safety,Washrooms,High,High,8
+Broken staircase railing in Washrooms,Safety,Classroom,Medium,High,11
+Broken staircase railing in Classroom,Safety,Classroom,High,High,4
+Smoke from switch board in Campus Area,Safety,Other,Medium,High,15
+Electrical spark observed in Other,Safety,Campus Area,High,High,11
+Broken staircase railing in Campus Area,Safety,Washrooms,Medium,High,11
+Smoke from switch board in Other,Safety,Other,Medium,High,19
+Water leakage near electric panel in Lab,Safety,Lab,High,High,8
+Broken staircase railing in Classroom,Safety,Campus Area,Medium,High,16
+Fire alarm malfunction in Washrooms,Safety,Other,High,High,9
+Smoke from switch board in Other,Safety,Classroom,High,High,4
+Fire alarm malfunction in Classroom,Safety,Lab,High,High,6
+Fire alarm malfunction in Campus Area,Safety,Other,High,High,8
+Electrical spark observed in Campus Area,Safety,Other,Medium,High,22
+Smoke from switch board in Lab,Safety,Lab,Medium,High,9
+Broken staircase railing in Classroom,Safety,Classroom,High,High,1
+Fire alarm malfunction in Other,Safety,Classroom,Medium,High,23
+Electrical spark observed in Classroom,Safety,Campus Area,Medium,High,10
+Fire alarm malfunction in Campus Area,Safety,Classroom,High,High,5
+Water leakage near electric panel in Washrooms,Safety,Other,High,High,12
+Electrical spark observed in Classroom,Safety,Campus Area,High,High,3
+Water leakage near electric panel in Other,Safety,Classroom,High,High,4
+Water leakage near electric panel in Lab,Safety,Other,High,High,3
+Smoke from switch board in Other,Safety,Washrooms,High,High,3
+Fire alarm malfunction in Campus Area,Safety,Campus Area,High,High,2
+Broken staircase railing in Washrooms,Safety,Classroom,Medium,High,18
+Fire alarm malfunction in Lab,Safety,Other,High,High,12
+Smoke from switch board in Classroom,Safety,Lab,High,High,3
+Water leakage near electric panel in Campus Area,Safety,Classroom,High,High,11
+Electrical spark observed in Campus Area,Safety,Other,Medium,High,18
+Electrical spark observed in Classroom,Safety,Campus Area,High,High,8
+Broken staircase railing in Washrooms,Safety,Lab,High,High,3
+Smoke from switch board in Other,Safety,Lab,High,High,5
+Electrical spark observed in Lab,Safety,Washrooms,High,High,2
+Smoke from switch board in Other,Safety,Washrooms,Medium,High,20
+Electrical spark observed in Campus Area,Safety,Classroom,High,High,4
+Fire alarm malfunction in Other,Safety,Classroom,Medium,High,20
+Water leakage near electric panel in Lab,Safety,Lab,High,High,2
+Smoke from switch board in Washrooms,Safety,Other,High,High,3
+Broken staircase railing in Classroom,Safety,Washrooms,High,High,7
+Fire alarm malfunction in Classroom,Safety,Washrooms,High,High,1
+Canteen food complaint in Lab,Other,Campus Area,Low,Low,27
+Bus delay problem in Lab,Other,Campus Area,Low,Low,34
+Canteen food complaint in Washrooms,Other,Lab,Medium,Medium,22
+Bus delay problem in Washrooms,Other,Campus Area,Medium,Medium,19
+Noise disturbance in Lab,Other,Other,Medium,Medium,16
+Bus delay problem in Lab,Other,Washrooms,Low,Low,28
+Canteen food complaint in Classroom,Other,Classroom,Low,Low,42
+Canteen food complaint in Washrooms,Other,Lab,Medium,Medium,13
+Library timing issue in Campus Area,Other,Campus Area,Medium,Medium,22
+Library timing issue in Other,Other,Classroom,Medium,Medium,20
+Noise disturbance in Classroom,Other,Classroom,Medium,Medium,20
+Parking space issue in Classroom,Other,Classroom,High,High,9
+Bus delay problem in Washrooms,Other,Lab,Medium,Medium,21
+Canteen food complaint in Washrooms,Other,Washrooms,Medium,Medium,18
+Noise disturbance in Lab,Other,Campus Area,Low,Low,43
+Bus delay problem in Other,Other,Lab,Medium,Medium,20
+Parking space issue in Campus Area,Other,Classroom,Low,Low,26
+Noise disturbance in Washrooms,Other,Campus Area,High,High,5
+Canteen food complaint in Other,Other,Classroom,High,High,12
+Noise disturbance in Washrooms,Other,Lab,Medium,Medium,22
+Canteen food complaint in Classroom,Other,Classroom,Low,Low,40
+Bus delay problem in Washrooms,Other,Campus Area,High,High,6
+Parking space issue in Lab,Other,Lab,Medium,Medium,20
+Noise disturbance in Washrooms,Other,Classroom,Medium,Medium,18
+Bus delay problem in Lab,Other,Washrooms,High,High,10
+Parking space issue in Lab,Other,Campus Area,Medium,Medium,13
+Canteen food complaint in Classroom,Other,Campus Area,Medium,Medium,10
+Bus delay problem in Campus Area,Other,Classroom,High,High,3
+Library timing issue in Washrooms,Other,Washrooms,Medium,Medium,8
+Library timing issue in Washrooms,Other,Other,Medium,Medium,9
+Library timing issue in Lab,Other,Other,Low,Low,42
+Bus delay problem in Other,Other,Other,High,High,12
+Canteen food complaint in Lab,Other,Other,Low,Low,30
+Bus delay problem in Classroom,Other,Other,Low,Low,41
+Bus delay problem in Classroom,Other,Classroom,Low,Low,35
+Parking space issue in Campus Area,Other,Lab,Medium,Medium,13
+Library timing issue in Washrooms,Other,Washrooms,Medium,Medium,17
+Parking space issue in Other,Other,Washrooms,Medium,Medium,18
+Bus delay problem in Classroom,Other,Lab,Low,Low,47
+Library timing issue in Lab,Other,Lab,Medium,Medium,21
+Parking space issue in Lab,Other,Lab,High,High,3
+Bus delay problem in Lab,Other,Other,Low,Low,42
+Noise disturbance in Lab,Other,Campus Area,Low,Low,43
+Library timing issue in Classroom,Other,Lab,Medium,Medium,12
+Noise disturbance in Other,Other,Washrooms,Low,Low,47
+Bus delay problem in Other,Other,Lab,Low,Low,47
+Parking space issue in Other,Other,Campus Area,Medium,Medium,22
+Noise disturbance in Washrooms,Other,Washrooms,Medium,Medium,24
+Bus delay problem in Other,Other,Lab,Medium,Medium,20
+Noise disturbance in Lab,Other,Lab,Low,Low,47

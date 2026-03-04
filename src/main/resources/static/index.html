@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Campus Issue Reporter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Smart Campus Issue Reporter</h2>
+
+<div class="form-box">
+
+    <label>Description:</label>
+    <textarea id="description" placeholder="Describe the issue"></textarea>
+
+    <label>Severity:</label>
+    <select id="severity">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+
+    <button onclick="submitIssue()">Submit Issue</button>
+
+</div>
+
+<h3>Prediction Result</h3>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
