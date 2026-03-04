@@ -3,6 +3,9 @@ package com.smartcampus.campusissue.controller;
 import com.smartcampus.campusissue.model.Issue;
 import com.smartcampus.campusissue.repository.IssueRepository;
 import com.smartcampus.campusissue.service.MLService;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +21,8 @@ public class IssueController {
 
     @GetMapping("/create")
     public Issue createIssue(@RequestParam String description,
-                             @RequestParam String severity) {
+                             @RequestParam String severity,
+                             @RequestParam String location) {
 
         String prediction = mlService.getPrediction(description, severity);
 
@@ -39,7 +43,26 @@ public class IssueController {
         issue.setPriority(priority);
         issue.setPredictedResolutionTimeHours(predictedTime);
         issue.setStatus("Pending");
+        issue.setLocation(location);
 
         return issueRepository.save(issue);
+    }
+    @GetMapping("/all")
+    public List<Issue> getAllIssues() {
+        return issueRepository.findAll();
+    }
+    
+    @PutMapping("/updateStatus/{id}")
+    public Issue updateStatus(@PathVariable String id,
+                              @RequestParam String status) {
+
+        Issue issue = issueRepository.findById(id).orElse(null);
+
+        if(issue != null){
+            issue.setStatus(status);
+            return issueRepository.save(issue);
+        }
+
+        return null;
     }
 }

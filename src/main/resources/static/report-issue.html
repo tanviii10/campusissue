@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Report Issue</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Report Campus Issue</h2>
+
+<div class="form-box">
+
+<label>Description</label>
+<textarea id="description"></textarea>
+
+<label>Severity</label>
+<select id="severity">
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<label>Location</label>
+<select id="location">
+<option>Classroom</option>
+<option>Lab</option>
+<option>Campus Area</option>
+<option>Washroom</option>
+<option>Other</option>
+</select>
+
+<label>Upload Image</label>
+<input type="file" id="image">
+
+<button onclick="submitIssue()">Submit Issue</button>
+
+</div>
+
+<div id="result"></div>
+
+<script src="report.js"></script>
+
+</body>
+</html>

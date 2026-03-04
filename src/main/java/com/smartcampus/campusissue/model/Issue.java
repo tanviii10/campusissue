@@ -15,8 +15,27 @@ public class Issue {
     private String priority;
     private double predictedResolutionTimeHours;
     private String status;
+    
+    private String location;
+    private String imageUrl;
 
-    public Issue() {}
+    public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
+	public Issue() {}
 
     public String getId() { return id; }
 

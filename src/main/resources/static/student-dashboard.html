@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <h2>Student Dashboard</h2>
 
-<a href="/index.html">Report Issue</a>
-<a href="/my-issues.html">My Issues</a>
+<button onclick="openReport()">Report New Issue</button>
+<button onclick="viewMyIssues()">My Issues</button>
+
+<script>
+
+function openReport(){
+    window.location.href="/report-issue.html";
+}
+
+function viewMyIssues(){
+    window.location.href="/my-issues.html";
+}
+
+</script>
 
 </body>
 </html>
