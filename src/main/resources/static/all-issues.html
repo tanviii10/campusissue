@@ -2,29 +2,198 @@
 <html>
 
 <head>
-<title>Admin Issue Panel</title>
+
+<title>All Issues</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<h2>All Reported Issues</h2>
 
-<table border="1" id="issueTable">
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="logo">
+Smart Campus Admin
+</div>
+
+<div class="nav-links">
+
+<a href="/admin-dashboard.html">Dashboard</a>
+
+<a href="/login.html" class="nav-login">Logout</a>
+
+</div>
+
+</div>
+
+
+
+<div class="dashboard-container">
+
+<h2 class="dashboard-title">
+All Reported Issues
+</h2>
+
+
+<div class="issue-table">
+
+<table id="issuesTable">
 
 <tr>
+
 <th>Description</th>
-<th>Location</th>
 <th>Category</th>
 <th>Priority</th>
 <th>Status</th>
+<th>Resolution Time</th>
 <th>Image</th>
-<th>Action</th>
+
 </tr>
 
 </table>
 
-<script src="admin.js"></script>
+
+<!-- IMAGE MODAL -->
+
+<div id="imageModal" class="image-modal">
+
+<span class="close-modal" onclick="closeImage()">×</span>
+
+<img id="modalImage">
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+/* IMAGE POPUP */
+
+function openImage(src){
+
+document.getElementById("imageModal").style.display="flex";
+document.getElementById("modalImage").src=src;
+
+}
+
+function closeImage(){
+
+document.getElementById("imageModal").style.display="none";
+
+}
+
+
+
+/* UPDATE STATUS */
+
+function updateStatus(id, status){
+
+fetch("/issues/updateStatus/"+id+"?status="+status,{
+method:"PUT"
+})
+.then(res=>res.json())
+.then(data=>{
+
+let dropdown = event.target;
+
+/* CHANGE COLOR AFTER UPDATE */
+
+dropdown.className = "status-dropdown "+status.replace(" ","").toLowerCase();
+
+});
+
+}
+
+
+
+/* LOAD ISSUES */
+
+fetch("/issues/all")
+
+.then(res => res.json())
+
+.then(data => {
+
+let table = document.getElementById("issuesTable");
+
+data.forEach(issue => {
+
+let row = table.insertRow();
+
+
+row.insertCell(0).innerText = issue.description;
+
+row.insertCell(1).innerText = issue.category;
+
+
+/* PRIORITY */
+
+let priorityCell = row.insertCell(2);
+
+priorityCell.innerHTML =
+"<span class='priority "+issue.priority.toLowerCase()+"'>"+issue.priority+"</span>";
+
+
+
+/* STATUS */
+
+let statusClass = issue.status.replace(" ","").toLowerCase();
+
+let statusCell = row.insertCell(3);
+
+statusCell.innerHTML =
+
+"<select onchange='updateStatus(\""+issue.id+"\", this.value)' class='status-dropdown "+statusClass+"'>"+
+
+"<option "+(issue.status==="Pending"?"selected":"")+">Pending</option>"+
+
+"<option "+(issue.status==="In Progress"?"selected":"")+">In Progress</option>"+
+
+"<option "+(issue.status==="Completed"?"selected":"")+">Completed</option>"+
+
+"</select>";
+
+
+
+/* RESOLUTION */
+
+row.insertCell(4).innerText =
+issue.predictedResolutionTimeHours + " hrs";
+
+
+
+/* IMAGE */
+
+let imageCell = row.insertCell(5);
+
+if(issue.imageUrl){
+
+imageCell.innerHTML =
+"<img src='/uploads/"+issue.imageUrl+"' class='issue-img' onclick='openImage(this.src)'>";
+
+}else{
+
+imageCell.innerText = "No Image";
+
+}
+
+});
+
+});
+
+</script>
 
 </body>
+
 </html>

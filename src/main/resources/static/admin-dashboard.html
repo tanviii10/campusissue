@@ -2,19 +2,149 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<h2>Admin Dashboard</h2>
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">Smart Campus Admin</div>
+    <div class="nav-links">
+        <a href="#">Dashboard</a>
+        <a href="/login.html" class="nav-login">Logout</a>
+    </div>
+</div>
 
-<button onclick="window.location.href='/all-issues.html'">
+
+<div class="dashboard-container">
+
+<!-- HEADER -->
+<div class="dashboard-header">
+    <div>
+        <h1>Admin Control Panel</h1>
+        <p class="dashboard-subtext">Monitor campus issues and system insights</p>
+    </div>
+</div>
+
+
+<!-- METRICS -->
+<div class="stats-container">
+
+<div class="stat-card">
+<h3>Total Issues</h3>
+<p id="totalIssues">--</p>
+</div>
+
+<div class="stat-card">
+<h3>Pending</h3>
+<p id="pendingIssues">--</p>
+</div>
+
+<div class="stat-card">
+<h3>In Progress</h3>
+<p id="progressIssues">--</p>
+</div>
+
+<div class="stat-card">
+<h3>Resolved</h3>
+<p id="resolvedIssues">--</p>
+</div>
+
+</div>
+
+
+<!-- QUICK ACTIONS -->
+
+<h2 class="section-title">Quick Actions</h2>
+
+<div class="dashboard-actions">
+
+<div class="action-card">
+
+<h3>Manage Issues</h3>
+
+<p>
+View all student-reported issues and update their status.
+</p>
+
+<button onclick="window.location.href='/all-issues.html'" class="primary-btn">
 View All Issues
 </button>
 
-<button onclick="window.location.href='/admin-stats.html'">
+</div>
+
+
+<div class="action-card">
+
+<h3>Analytics</h3>
+
+<p>
+See insights, trends and statistics about campus issues.
+</p>
+
+<button onclick="window.location.href='/admin-stats.html'" class="secondary-btn">
 View Analytics
 </button>
+
+</div>
+
+</div>
+
+
+<!-- ACTIVITY SECTION -->
+
+<h2 class="section-title">System Activity</h2>
+
+<div class="activity-box">
+
+<p>No recent activity yet.</p>
+
+</div>
+
+
+</div>
+<script>
+
+fetch("/issues/all")
+
+.then(res => res.json())
+
+.then(data => {
+
+let total = data.length;
+let pending = 0;
+let progress = 0;
+let resolved = 0;
+
+data.forEach(issue => {
+
+if(issue.status === "Pending"){
+pending++;
+}
+
+else if(issue.status === "In Progress"){
+progress++;
+}
+
+else if(issue.status === "Completed"){
+resolved++;
+}
+
+});
+
+document.getElementById("totalIssues").innerText = total;
+document.getElementById("pendingIssues").innerText = pending;
+document.getElementById("progressIssues").innerText = progress;
+document.getElementById("resolvedIssues").innerText = resolved;
+
+});
+
+</script>
 
 </body>
 </html>
